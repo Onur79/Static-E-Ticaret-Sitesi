@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--! CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--! Icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <header>
+        <!--  menü çubuğu -->
+        <div class="container-md ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/page/index.html">
+                    <img width="50px" src="../images/SadeceLogoTransparan.png" alt="SadeceLogoTransparan">
+                    <span >OnurTicaret</span>
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Admin
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="/page/CategoryIndex.html">Kategoriler</a></li>
+                              <li><a class="dropdown-item" href="/page/ProductIndex.html">Ürünler</a></li>
+                              <li><a class="dropdown-item" href="/page/UserIndex.html">Kullanıcılar</a></li>
+                              <li><a class="dropdown-item" href="/page/OrderIndex.html">siparişler</a></li>
+                            </ul>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/page/OrderIndex.html">Siparişler</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/page/Profil.html">profil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/page/summary.html"><i class="bi bi-cart2">(5)</i></a>
+                      </li>
+                     
+                     
+                    </ul>
+                    <div class="navbar-nav ms-auto mb-lg-0">
+                        <form class="d-flex">
+                            <button class="btn btn-outline-success col-sm-3" style="margin-right: 0.5rem;" type="submit" ><i class="bi bi-search me-1"></i>Ara</button>
+                            <input class="form-control me-2"  type="search" placeholder="Arama" aria-label="Search" style="min-width: 200px;">
+                          </form>
+                          <br>
+                          <a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-outline-primary" style="margin-right: 0.5rem;"><i class="bi bi-person-circle"></i> Üye Ol</a>
+                            <br>
+                          <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-success" style="margin-right: 0.5rem;"><i class="bi bi-box-arrow-in-right"></i> giriş </a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+       
+    </header>
+
+
+    
+    <div class="container">
+        <div class="row">
+            <!-- slider -->
+            
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- kategori listesi -->
+            </div>
+            <div class="col-md-3">
+                <!-- degisecek alan -->
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- FOOTER -->
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="exampleModalLabel">Giriş Formu</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+            <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i>facebook</button>
+            <button class="btn btn-outline-danger"><i class="bi bi-google"></i>google</button>
+        </div>
+       <br>
+        <form>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" id="recipient-name" placeholder="e mail">
+          </div>
+           <div class="mb-3">
+            
+            <input type="password" class="form-control" id="recipient-name" placeholder="şifre">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">kapat</button>
+        <button type="button" class="btn btn-success"><i class="bi bi-box-arrow-in-right"></i> giriş</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 " id="exampleModalLabel">kayıt Formu</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+              <button class="btn btn-outline-primary "><i class="bi bi-facebook"></i>facebook</button>
+              <button class="btn btn-outline-danger"><i class="bi bi-google"></i>google</button>
+          </div>
+         <br>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="recipient-name" placeholder="e mail">
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" id="recipient-name" placeholder="adı">
+              </div>
+
+              <div class="mb-3">
+                <input type="text" class="form-control" id="recipient-name" placeholder="soyadı">
+              </div>
+
+             <div class="mb-3">
+              
+              <input type="password" class="form-control" id="recipient-name" placeholder="şifre">
+            </div>
+            <div class="mb-3">
+              
+                <input type="password" class="form-control" id="recipient-name" placeholder="şifre tekrar">
+              </div>
+            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">kapat</button>
+          <button type="button" class="btn btn-primary"><i class="bi bi-person-circle"></i> üye ol</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+
+    <!--! JAVA SCRİPT CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
